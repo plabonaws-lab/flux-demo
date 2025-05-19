@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-panel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-panel
+  template:
+    metadata:
+      labels:
+        app: admin-panel
+    spec:
+      containers:
+        - name: admin-panel
+          image: plabondocker/adminorderonline:v4  # Use your current image tag here
+          ports:
+            - containerPort: 3001
+          envFrom:
+            - secretRef:
+                name: admin-secret
+
