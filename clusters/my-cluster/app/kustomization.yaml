@@ -2,13 +2,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
-  - service.yaml
-  - image-repository.yaml
-  - image-policy.yaml
+- deployment.yaml
+- service.yaml
+- image-repository.yaml
+- image-policy.yaml
 namespace: default
 
 images:
-  - name: plabondocker/adminorderonline
-    newTag: v4
-
+- name: plabondocker/adminorderonline
+  newName: plabondocker/adminorderonline
+  newTag: v4
