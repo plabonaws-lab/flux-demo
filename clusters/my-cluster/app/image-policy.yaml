@@ -9,5 +9,5 @@ spec:
     name: admin-panel
   policy:
     semver:
-      range: "v*"
+      range: "*"
 
