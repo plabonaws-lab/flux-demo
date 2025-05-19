@@ -1,0 +1,12 @@
+# clusters/my-cluster/app/image-policy.yaml
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: admin-panel
+spec:
+  imageRepositoryRef:
+    name: admin-panel
+  policy:
+    semver:
+      range: "v*"
+

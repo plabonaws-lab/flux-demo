@@ -1,0 +1,9 @@
+# clusters/my-cluster/app/image-repository.yaml
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: admin-panel
+spec:
+  image: plabondocker/adminorderonline
+  interval: 1m
+
