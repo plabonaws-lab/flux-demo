@@ -4,6 +4,7 @@ resources:
   - deployment.yaml
   - service.yaml
 
+namespace: default
 images:
   - name: plabondocker/adminorderonline
     newTag: v4
