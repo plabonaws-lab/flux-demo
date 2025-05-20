@@ -1,0 +1,30 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  creationTimestamp: "2025-05-19T10:11:49Z"
+  finalizers:
+  - finalizers.fluxcd.io
+  generation: 2
+  labels:
+    kustomize.toolkit.fluxcd.io/name: flux-system
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
+  name: admin-panel
+  namespace: flux-system
+  resourceVersion: "1167535"
+  uid: 0461a546-4916-4697-bde2-80fb3fd9e8a5
+spec:
+  imageRepositoryRef:
+    name: admin-panel
+  policy:
+    semver:
+      range: '*'
+status:
+  conditions:
+  - lastTransitionTime: "2025-05-19T10:52:02Z"
+    message: Latest image tag for 'plabondocker/adminorderonline' resolved to v5.0.0
+    observedGeneration: 2
+    reason: Succeeded
+    status: "True"
+    type: Ready
+  latestImage: plabondocker/adminorderonline:v5.0.0
+  observedGeneration: 2

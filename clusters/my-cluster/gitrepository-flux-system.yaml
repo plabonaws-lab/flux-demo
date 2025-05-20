@@ -1,0 +1,14 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-system
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  url: https://github.com/plabonaws-lab/flux-demo.git
+  ref:
+    branch: main
+  secretRef:
+    name: git-credentials-secret  # if private repo
+  timeout: 60s
+
