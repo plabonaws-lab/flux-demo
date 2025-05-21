@@ -16,7 +16,7 @@ spec:
       containers:
         - name: admin-panel
           # {"$imagepolicy": "flux-system:admin-panel"}
-          image: plabondocker/adminorderonline  # Use your current image tag here
+          image: plabondocker/adminorderonline:v4  # Use your current image tag here
           ports:
             - containerPort: 3001
           envFrom:

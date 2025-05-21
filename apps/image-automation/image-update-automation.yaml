@@ -1,0 +1,25 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageUpdateAutomation
+metadata:
+  name: admin-panel-update
+  namespace: flux-system
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: flux-demo    # Name of your GitRepository resource in the cluster (not GitHub repo name)
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        name: fluxcdbot
+        email: fluxcdbot@example.com
+      messageTemplate: 'Update admin-panel image to {{ .Update.Image }}'
+    push:
+      branch: main
+  update:
+    strategy: Setters
+    path: ./clusters/my-cluster/app
+

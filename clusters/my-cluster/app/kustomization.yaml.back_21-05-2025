@@ -4,6 +4,8 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+- image-repository.yaml
+- image-update-automation.yaml
 namespace: default
 
 images:
