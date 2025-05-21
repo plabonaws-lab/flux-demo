@@ -9,4 +9,4 @@ namespace: default
 images:
 - name: plabondocker/adminorderonline
   newName: plabondocker/adminorderonline
-  newTag: v6.0.0
+# newTag: v6.0.0
