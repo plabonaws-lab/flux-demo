@@ -7,7 +7,7 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: flux-system    # Name of your GitRepository resource in the cluster (not GitHub repo name)
+    name: flux-demo    # Name of your GitRepository resource in the cluster (not GitHub repo name)
   git:
     checkout:
       ref:
