@@ -20,6 +20,6 @@ spec:
     push:
       branch: main
   update:
-    strategy: Git
+    strategy: Setters
     path: ./clusters/my-cluster/app
 

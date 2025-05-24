@@ -1,0 +1,134 @@
+[33mcommit c52fe30947caa9bd5bbf0be4cc4d7e787b724a33[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Thu May 22 18:25:35 2025 +0600
+
+    Remove hardcoded image tag to allow Flux automation
+
+[33mcommit 7f17e5bc910646a1554c785fa330c4b940ba702a[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Thu May 22 16:49:31 2025 +0600
+
+    WIP: saving local changes before pull
+
+[33mcommit 7c0f182d876b3dc731f8283ebaff4e79a7ed167b[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Thu May 22 16:26:28 2025 +0600
+
+    Fix: use image tag via kustomization.yaml for Flux automation
+
+[33mcommit bdd097c2c2f1f06adae636222a5dda44c5b24e34[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Thu May 22 15:43:40 2025 +0600
+
+    Fix: Add newTag to enable image automation
+
+[33mcommit cb374ddf9a0a877fd9c069bc766748da05afbc0a[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Wed May 21 21:12:02 2025 +0600
+
+    Allow Flux Image Automation to manage image tags
+
+[33mcommit 392d408134dd433cc070ba204a9f9f357ff8d600[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Wed May 21 20:28:24 2025 +0600
+
+    Initial Flux manifests
+
+[33mcommit 6a7f475d479c1874f312caf2bfb7a64caba4aec6[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Wed May 21 17:38:14 2025 +0600
+
+    Fix Flux CRD apiVersion and ensure valid kustomization
+
+[33mcommit 000d08d73c1a72ad0713d5c250529e00144af257[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Wed May 21 17:25:37 2025 +0600
+
+    Fix apiVersion for root kustomization.yaml
+
+[33mcommit daac7562a6cd3df15b2e98f7cdfcfc59db71bb02[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Wed May 21 17:07:00 2025 +0600
+
+    Set up Flux image automation for admin-panel
+
+[33mcommit 8c73fd5d680269ffc6b26e71f0015c09cef5f846[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Tue May 20 19:51:45 2025 +0600
+
+    Fix kustomization errors for admin-panel and root
+
+[33mcommit 61692eef7696e9032a7e57ee0ce1880c0d22b7c6[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Tue May 20 17:25:32 2025 +0600
+
+    Update image repository and remove old image policy
+
+[33mcommit 7c415400465ae9eb8640602ad4612ab4cdfd55c1[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Tue May 20 17:18:31 2025 +0600
+
+    Set newTag to v6.0.0 for Flux image automation
+
+[33mcommit 77a40f1657051be0d6593636a988a03e8773c7f3[m
+Author: plabonaws-lab <89953961+plabonaws-lab@users.noreply.github.com>
+Date:   Tue May 20 15:04:40 2025 +0600
+
+    Update comment before Image Name deployment.yaml
+    
+    Added Comment  # {"$imagepolicy": "flux-system:admin-panel"}
+    before the Image name thus FluxCD will detect where need to change
+
+[33mcommit fdb8c06719c3b7f590db786e5abc9901178efad8[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 19:59:18 2025 +0600
+
+    Add image setter for admin-panel
+
+[33mcommit 9c31bc7cd286b7290d6add2304b97d1d2d0e0aa4[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 16:44:51 2025 +0600
+
+    Update image policy semver range to *
+
+[33mcommit 3915707b942f205ed96e417822aabde181c3d067[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 16:32:32 2025 +0600
+
+    Fix malformed image-policy.yaml
+
+[33mcommit 30f961a4a2d14bf08d328adc06fce6ab61b9b4c9[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 16:22:22 2025 +0600
+
+    Fix: Add namespace to ImagePolicy for admin-panel
+
+[33mcommit 3ef6cee88e70efda70b9d9f8e3daa1b6805ec841[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 16:11:31 2025 +0600
+
+    Add image automation for admin-panel
+
+[33mcommit 75847cc0e2fdefbfb3c17cf2fd2cf1802aa467af[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 16:06:59 2025 +0600
+
+    Fix: set namespace to default for app resources
+
+[33mcommit d432c80aa277d7372bd716c8324aa4bfd2e4e48f[m
+Author: Plabon Mazumder <cseplabon@gmail.com>
+Date:   Mon May 19 15:54:39 2025 +0600
+
+    Add app deployment, service and kustomization manifests
+
+[33mcommit 85f96cb4373a94f5504c87cd4de4458fc174e142[m
+Author: Flux <>
+Date:   Mon May 19 15:46:19 2025 +0600
+
+    Add Flux sync manifests
+
+[33mcommit acfffba6b5e2ce5e47cde2b6b02774f8982a2bb6[m
+Author: Flux <>
+Date:   Mon May 19 15:46:17 2025 +0600
+
+    Add Flux v2.5.1 component manifests
