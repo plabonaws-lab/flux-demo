@@ -15,7 +15,9 @@ spec:
     spec:
       containers:
         - name: admin-panel
-        # {"$imagepolicy": "flux-system:admin-panel"}
+          # This special comment enables Flux to track image updates
+          # DO NOT COMMENT THIS LINE
+          # {"$imagepolicy": "flux-system:admin-panel"}
           image: plabondocker/adminorderonline  # Use your current image tag here
           ports:
             - containerPort: 3001
